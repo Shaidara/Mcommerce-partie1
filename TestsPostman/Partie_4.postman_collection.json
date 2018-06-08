@@ -1,0 +1,93 @@
+{
+	"info": {
+		"_postman_id": "4a251814-da29-47f9-8380-4c42ea5a171b",
+		"name": "Partie_4",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://localhost:9090/AdminProduits",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:9090/AdminProduits",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9090",
+					"path": [
+						"AdminProduits"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:9090/Produits",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"id\":\"4\",\n\t\"nom\":\"Testnom\",\n\t\"prix\":0,\n\t\"prixAchat\":150\n}"
+				},
+				"url": {
+					"raw": "http://localhost:9090/Produits",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9090",
+					"path": [
+						"Produits"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:9090/TrierProduitsParOrdreAlphabetique",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\"id\" : 1,\n\t\"nom\" : \"Ceci a été mis à jour\",\n\t\"prix\" : 145,\n\t\"prixAchat\" : 100\n}"
+				},
+				"url": {
+					"raw": "http://localhost:9090/TrierProduitsParOrdreAlphabetique",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9090",
+					"path": [
+						"TrierProduitsParOrdreAlphabetique"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
